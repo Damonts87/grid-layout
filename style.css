@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+@media(max-width: 800px) { /*tablet*/
+    .One{ grid-area: one;}
+    .Two{ grid-area: two;}
+    .Three{ grid-area: three;}
+    .Four{ grid-area: four;}
+    .Five{ grid-area: five;}
+    .Six{ grid-area: six;}
+
+
+    .container{
+        display: grid;
+        grid-template-areas: 
+           'one one'
+           'two three'
+           'two three'
+           'four four'
+           'five five'
+           'six six';
+    }
+    img{
+        max-height: 400px;
+    }
+}
+@media(min-width: 801px) { /*computer*/
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li{
+        width: 100%
+    }
+    .One{ grid-area: one;}
+    .Two{ grid-area: two;}
+    .Three{ grid-area: three;}
+    .Four{ grid-area: four;}
+    .Five{ grid-area: five;}
+    .Six{ grid-area: six;}
+
+
+    .container{
+        display: grid;
+        grid-template-areas: 
+           'one one three'
+           'two four three'
+           'five five six';
+    }
+    img{
+        max-height: 500px;
+    }
+}
+
+nav ul {
+    list-style: none;
+    list-style-image: none;
+ }
+ 
+ nav a {
+    text-decoration: none;
+ }
+
+ img{
+    max-width: 100%;
+ }
+
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #2a9bcf;
+}
+
+header, footer {
+    background: #134807;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+p{
+    margin: .2rem;
+}
+
+.nav ul {
+    list-style-type: none;
+    background-color: #757575;
+    width: 100%;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: #db71a9;
+    text-align: center;
+    padding: 10px;
+    margin: .1rem;
+}
+
+.nav a:hover{
+    background-color: #20BF55;
+}
+
+main > section {
+    background: #FBFBFF;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    margin: 1rem;
+}
+
+main > section ul{
+    padding: 1rem;
+}
+
+pre{
+   font-size: .5rem; 
+}
+
+
